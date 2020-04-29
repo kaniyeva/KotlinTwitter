@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5eef5"
+    tools:context=".view.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#FFF"
+            android:scaleType="fitStart"
+            android:src="@drawable/icons8_arrow_pointing_left_30"
+            android:tint="#1BA4E0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="50dp"
+            android:text="Tweet"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintTop_toTopOf="@+id/back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/dxfg"
+        android:src="@drawable/payment_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/avatarList"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/cart"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cons1" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/ml5"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/avatarList"
+                    app:layout_constraintTop_toTopOf="@id/avatarList" />
+
+                <ImageView
+                    android:id="@+id/verify"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="verify"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="@+id/userName"
+                    app:layout_constraintStart_toEndOf="@id/userName"
+                    app:layout_constraintTop_toTopOf="@id/avatarList"
+                    app:srcCompat="@drawable/verify"
+                    tools:srcCompat="@drawable/verify" />
+
+                <TextView
+                    android:id="@+id/userLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="ml5"
+                    android:textColor="#A9A9A9"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/avatarList"
+                    app:layout_constraintTop_toBottomOf="@id/userName" />
+
+                <ImageView
+                    android:id="@+id/down"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/down"
+                    android:textColor="#000"
+                    app:layout_constraintBottom_toBottomOf="@+id/userName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/userName" />
+
+                <TextView
+                    android:id="@+id/userMessageDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="7dp"
+                    android:text="Good luck finding a better view dhfbe e"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    app:drawableTint="#C0BFBF"
+                    app:layout_constraintEnd_toEndOf="@+id/down"
+                    app:layout_constraintStart_toStartOf="@id/avatarList"
+                    app:layout_constraintTop_toBottomOf="@id/avatarList" />
+
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_back"
+                    android:src="@drawable/image"
+                    app:layout_constraintEnd_toEndOf="@+id/down"
+                    app:layout_constraintStart_toStartOf="@id/avatarList"
+                    app:layout_constraintTop_toBottomOf="@id/userMessageDetail" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="12:00 pm"
+                    android:textColor="#7A7878"
+                    android:textSize="16sp"
+                    android:tint="#D3CCC7C7"
+                    app:layout_constraintStart_toStartOf="@id/avatarList"
+                    app:layout_constraintTop_toBottomOf="@id/userImage" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="01 Mar 20"
+                    android:textColor="#7A7878"
+                    android:textSize="16sp"
+                    android:tint="#D3CCC7C7"
+                    app:layout_constraintStart_toEndOf="@id/time"
+                    app:layout_constraintTop_toBottomOf="@id/userImage" />
+
+                <TextView
+                    android:id="@+id/group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginTop="7dp"
+                    android:text="true Anthem"
+                    android:textColor="#4d8db7"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/date"
+                    app:layout_constraintTop_toBottomOf="@id/userImage" />
+
+                <ImageView
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/dxfg"
+                    android:src="@drawable/payment_divider"
+                    app:layout_constraintEnd_toEndOf="@+id/userImage"
+                    app:layout_constraintStart_toStartOf="@+id/userImage"
+                    app:layout_constraintTop_toBottomOf="@id/time" />
+
+
+                <TextView
+                    android:id="@+id/tweetsContain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/divider3"
+                    app:layout_constraintStart_toStartOf="@id/avatarList"
+                    app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+                <TextView
+                    android:id="@+id/tweets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="Retweets"
+                    android:textColor="#7A7878"
+                    android:textSize="18sp"
+                    android:tint="#D3CCC7C7"
+                    app:layout_constraintStart_toEndOf="@id/tweetsContain"
+                    app:layout_constraintTop_toTopOf="@id/tweetsContain" />
+
+                <TextView
+                    android:id="@+id/likeContain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="29"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/tweets"
+                    app:layout_constraintTop_toTopOf="@id/tweetsContain" />
+
+                <TextView
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="Likes"
+                    android:textColor="#7A7878"
+                    android:textSize="18sp"
+                    android:tint="#D3CCC7C7"
+                    app:layout_constraintStart_toEndOf="@id/likeContain"
+                    app:layout_constraintTop_toTopOf="@id/tweetsContain" />
+
+                <ImageView
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="40dp"
+                    android:contentDescription="@string/dxfg"
+                    android:src="@drawable/payment_divider"
+                    app:layout_constraintEnd_toEndOf="@+id/userImage"
+                    app:layout_constraintStart_toStartOf="@+id/userImage"
+                    app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3">
+
+                    <ImageView
+                        android:id="@+id/commentButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tint="#D3CCC7C7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider3"
+                        app:srcCompat="@android:drawable/sym_action_chat" />
+
+                    <ImageView
+                        android:id="@+id/retweetButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tint="#D3CCC7C7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider3"
+                        app:srcCompat="@mipmap/retweet"
+                        tools:srcCompat="@mipmap/retweet" />
+
+                    <ImageView
+                        android:id="@+id/likeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:src="@drawable/icons8_love_24"
+                        android:tint="#D3CCC7C7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+                    <ImageView
+                        android:id="@+id/shareButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tint="#D3CCC7C7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider3"
+                        app:srcCompat="@android:drawable/ic_menu_share" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/dxfg"
+                    android:src="@drawable/payment_divider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFF"
+                android:gravity="center"
+                android:text="Show more replies"
+                android:textColor="#4d8db7"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/cons1" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFF"
+                app:layout_constraintTop_toBottomOf="@+id/show"
+
+                >
+
+                <ImageView
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/dxfg"
+                    android:src="@drawable/payment_divider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Tweet your reply"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+                <ImageView
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:contentDescription="@string/dxfg"
+                    android:src="@drawable/payment_divider"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reply" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

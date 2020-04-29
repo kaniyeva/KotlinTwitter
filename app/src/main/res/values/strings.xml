@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Twitter</string>
+    <string name="ml5">ML5</string>
+    <string name="dggv">TODO</string>
+    <string name="_10">10</string>
+    <string name="home">home</string>
+    <string name="someone">someone</string>
+    <string name="home1">Home</string>
+    <string name="reminder">reminder</string>
+    <string name="fgb">TODO</string>
+    <string name="dxfg">TODO</string>
+    <string name="option">option</string>
+    <string name="dividerFromB" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tweets">Tweets</string>
+    <string name="favourite">Favourite</string>
+    <string name="good_luck_finding_a_better_view_vavhjiolbvcbvn_hjkljhgb_hdsjkdn_asjvkcnms_asvikjdcnkcdv_huaidvjkmnjkdesddjsikldvfmlkdm_v">Good luck finding a better view vavhjiolbvcbvn hjkljhgb hdsjkdn asjvkcnms asvikjdcnkcdv huaidvjkmnjkdesddjsikldvfmlkdm,v</string>
+    <string name="_1m">1m</string>
+</resources>
